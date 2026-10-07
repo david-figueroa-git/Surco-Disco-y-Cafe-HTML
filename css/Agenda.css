@@ -276,3 +276,29 @@
         margin-top: -8px;
     }
 }
+
+
+@media (max-width: 900px) {
+
+    .proximo-box {
+        grid-template-columns: 1fr;
+    }
+
+    .proximo-fecha {
+        min-height: 400px;
+    }
+
+    .proximo-imagen {
+        max-width: 500px;
+        max-height: 350px;
+    }
+
+    .proximo-info {
+        padding: 35px;
+    }
+
+    .evento {
+        grid-template-columns: 80px 1fr auto;
+        gap: 20px;
+    }
+}
