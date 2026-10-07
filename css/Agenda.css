@@ -180,3 +180,99 @@
     font-size: 24px;
     white-space: nowrap;
 }
+
+
+/*Responsivo--------------------------------------*/
+@media (max-width: 600px) {
+
+    .page-header {
+        padding: 40px 0 30px;
+    }
+
+    .page-header p {
+        font-size: 16px;
+    }
+
+    .proximo {
+        padding: 40px 0;
+    }
+
+    .proximo-box {
+        display: block;
+    }
+
+    .proximo-fecha {
+        min-height: auto;
+        padding: 20px;
+    }
+
+    .proximo-imagen {
+        width: 100%;
+        max-height: none;
+    }
+
+    .fecha-nombre {
+        font-size: 15px;
+    }
+
+    .proximo-info {
+        padding: 25px 20px;
+    }
+
+    .proximo-info h2 {
+        font-size: 38px;
+    }
+
+    .proximo-texto {
+        font-size: 14px;
+    }
+
+    .datos-evento {
+        grid-template-columns: 1fr;
+    }
+
+    .datos-evento .dato:nth-child(odd) {
+        border-right: none;
+    }
+
+    .datos-evento .dato:not(:last-child) {
+        border-bottom: 2px solid var(--tinta);
+    }
+
+    .resto {
+        padding: 40px 0;
+    }
+
+    .resto h2 {
+        margin-bottom: 30px;
+    }
+
+    .evento {
+        grid-template-columns: 60px 1fr;
+        gap: 15px;
+        padding: 20px 0;
+    }
+
+    .evento-fecha {
+        width: 60px;
+        height: 60px;
+    }
+
+    .evento-fecha span {
+        font-size: 27px;
+    }
+
+    .evento-detalle h3 {
+        font-size: 20px;
+    }
+
+    .evento-detalle p {
+        font-size: 13px;
+    }
+
+    .evento-precio {
+        grid-column: 2;
+        font-size: 20px;
+        margin-top: -8px;
+    }
+}
