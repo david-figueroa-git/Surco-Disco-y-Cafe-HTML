@@ -130,3 +130,44 @@ button {
     cursor: pointer;
 }
 
+.informacion h2 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+.informacion p {
+    line-height: 1.5;
+}
+
+.mapa {
+    display: grid;
+    width: 280px;
+    height: 100x;
+}
+
+.mapa img{
+    width: 97%;
+    height: 100%;
+    margin-right: 15px;
+    border: 2px solid #1c1b19 ;
+}
+
+.horarios {
+    margin: 0;
+}
+
+.horarios div {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.8rem 0;
+    border-bottom: 1px dotted #1c1b19;
+    font-size: 0.9rem;
+}
+
+.horarios dd {
+    margin: 0;
+    white-space: nowrap;
+}
+
+
