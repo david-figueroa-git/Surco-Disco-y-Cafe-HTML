@@ -13,35 +13,63 @@
     <!--Encabezado de la página-->
     <header class="encabezado">
         <a class="logo" href="#">SURCO<span>.</span></a>
-        <nav>
-            <a href="#">INICIO</a>
-            <a href="#">CATÁLOGO</a>
-            <a href="#">DISCOS DEL MES</a>
-            <a href="#">AGENDA</a>
-            <a href="#">NOSOTROS</a>
-            <a href="#">CONTACTO</a>
+
+        <nav aria-label="Navegación principal">
+            <a href="#">Inicio</a>
+            <a href="#">Catálogo</a>
+            <a href="#">Disco del mes</a>
+            <a href="#">Agenda</a>
+            <a href="#">Nosotros</a>
+            <a href="#" aria-current="page">Contacto</a>
         </nav>
     </header>
 
-    <!--Franja negra debajo del encabezado-->
     <div class="franja">
-        Discos nuevos y usados - Café de origen - Música en vivo
-        cada viernes
+        Discos nuevos y usados · Café de origen · Música en vivo cada viernes
     </div>
-
-    <section class="contenedor">
-        <div >
-        <h1>CONTACTO</h1>
-        <p>¿Buscas un disco en partucular o quieres vendernos tu coleccón?
-            Escribenos
-        </p>
-
+<main>
+    <section class="contacto">
+        <div class="introduccion">
+            <h1>Contacto</h1>
+            <p>¿Buscas un disco en particular o quieres vendernos tu colección? Escríbenos.</p>
         </div>
+
+        <form class="formulario">
+            <div class="campo">
+                <label for="nombre">Nombre</label>
+                <input id="nombre" name="nombre" autocomplete="name">
+            </div>
+
+            <div class="campo">
+                <label for="celular">Celular</label>
+                <input id="celular" name="celular" type="tel" autocomplete="tel">
+            </div>
+
+            <div class="campo">
+                <label for="correo">Correo</label>
+                <input id="correo" name="correo" type="email" autocomplete="email">
+            </div>
+
+            <div class="campo">
+                <label for="motivo">¿En qué te ayudamos?</label>
+                <select id="motivo" name="motivo">
+                    <option>Busco un disco</option>
+                    <option>Quiero vender discos</option>
+                    <option>Otra consulta</option>
+                </select>
+            </div>
+
+            <div class="campo campo-mensaje">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="5"></textarea>
+            </div>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+
     </section>
-
-
-
-
+</main>
 
 </body>
 </html>
