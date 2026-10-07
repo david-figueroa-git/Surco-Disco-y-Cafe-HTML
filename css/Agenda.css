@@ -111,3 +111,13 @@
 .proximo-info .btn {
     line-height: 1.5;
 }
+
+
+.resto {
+    padding: 70px 0;
+    border-top: 2px solid var(--tinta);
+}
+
+.resto h2 {
+    margin-bottom: 40px;
+}
