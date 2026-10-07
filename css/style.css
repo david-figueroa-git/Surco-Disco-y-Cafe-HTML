@@ -342,3 +342,415 @@ button {
         padding-top: 1rem;
         }
 }
+
+/*ESTILOS DE DISCOS*/
+
+.producto-contenedor {
+    padding: 24px 16px;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin: 15px;
+}
+
+.disco img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border: 1px solid #1a1a1a;
+    display: block;
+}
+
+/* --- DETALLES DE PRODUCTO --- */
+.texto-superior {
+    color: #d03b29;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+}
+
+.titulo-album {
+    font-family: 'Oswald', sans-serif;
+    font-size: 3rem;
+    line-height: 0.95;
+    text-transform: uppercase;
+}
+
+.nombre-artista {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 4px;
+    margin-bottom: 16px;
+}
+
+.precio {
+    color: #d03b29;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.descripcion {
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.btn-comprar {
+    width: 100%;
+    background-color: #181818;
+    color: #ffffff;
+    border: none;
+    padding: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-bottom: 24px;
+}
+
+/* --- ESPECIFICACIONES (CSS GRID) --- */
+.tabla-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid #1a1a1a;;
+    margin-bottom: 32px;
+}
+
+.caja {
+    padding: 10px;
+    border: 0.5px solid #1a1a1a;;
+    display: flex;
+    flex-direction: column;
+}
+
+.caja .label {
+    font-size: 0.65rem;
+    color: #666;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.caja .val {
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+/* --- TRACKLIST --- */
+.lista h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.8rem;
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+
+.lista ul {
+    list-style: none;
+}
+
+.lista li {
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+    font-size: 0.9rem;
+}
+
+.lista .num {
+    color: #d03b29;
+    font-weight: 700;
+    width: 32px;
+}
+
+.lista .title {
+    flex-grow: 1;
+    font-weight: 600;
+}
+
+.lista .duration {
+    color: #666;
+    font-size: 0.85rem;
+}
+
+.divider {
+    border: none;
+    border-top: 1px solid rgba(0,0,0,0.15);
+    margin: 30px 0;
+}
+
+.recomendaciones {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 16px 40px 16px;
+    }
+
+.recomendaciones h2 {
+    font-family: 'Oswald', sans-serif;;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.tarjeta-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.tarjeta img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border: 1px solid #1a1a1a;
+    display: block;
+}
+
+.tarjeta-info {
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.tarjeta-info h4 {
+    font-size: 0.9rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.tarjeta-info p {
+    font-size: 0.75rem;
+    color: #555;
+}
+
+.tarjeta-precio {
+    font-weight: 700;
+    font-size: 0.85rem;
+    margin-top: 2px;
+}
+
+/* ===== AJUSTES DISCO DEL MES (móvil + escritorio) ===== */
+:root {
+    --font-heading: 'Anton', Impact, 'Arial Narrow', sans-serif;
+    --gray-border: #1c1b19;
+    --lado: 16px; /* margen lateral del contenido */
+}
+
+body {
+    font-family: 'Space Grotesk', Arial, sans-serif;
+}
+
+.logo {
+    font-family: var(--font-heading);
+    font-weight: 400;
+}
+
+nav a.activo {
+    padding-bottom: 0.3rem;
+    border-bottom: 3px solid #d74332;
+}
+
+/* Contenedor: grid con márgenes laterales, así la línea divisoria llega de borde a borde */
+.producto-contenedor {
+    display: grid;
+    grid-template-columns: var(--lado) minmax(0, 1fr) var(--lado);
+    row-gap: 24px;
+    max-width: none;
+    margin: 0;
+    padding: 24px 0 0;
+}
+
+.producto-contenedor > .disco,
+.producto-contenedor > section {
+    grid-column: 2;
+}
+
+.producto-contenedor > .divider {
+    grid-column: 1 / -1;
+}
+
+/* Portada */
+.disco img {
+    border: 2px solid var(--gray-border);
+}
+
+/* Detalles */
+.texto-superior {
+    margin: 0 0 0.5rem;
+    letter-spacing: 0.15em;
+}
+
+.titulo-album {
+    margin: 0;
+    font-family: var(--font-heading);
+    font-weight: 400;
+}
+
+.nombre-artista {
+    font-family: inherit;       /* el h2 global usa Impact y mayúsculas */
+    text-transform: none;
+    font-size: 1.2rem;
+    margin: 0.4rem 0 1.5rem;
+}
+
+.precio {
+    margin: 0 0 1rem;
+    font-family: var(--font-heading);
+    font-weight: 400;
+}
+
+.descripcion {
+    margin-top: 0;
+    line-height: 1.6;
+}
+
+.btn-comprar {
+    width: fit-content;
+    padding: 14px 28px;
+}
+
+/* Tabla de especificaciones */
+.tabla-grid {
+    border: 2px solid var(--gray-border);
+}
+
+.caja {
+    padding: 14px 16px;
+    border: 0;
+}
+
+.caja:nth-child(odd)  { border-right: 2px solid var(--gray-border); }
+.caja:nth-child(-n+2) { border-bottom: 2px solid var(--gray-border); }
+
+.caja .label {
+    margin-bottom: 4px;
+}
+
+/* Tracklist */
+.lista h3 {
+    margin: 24px 0 8px;
+    font-family: var(--font-heading);
+    font-weight: 400;
+}
+
+.lista ul {
+    margin: 0;
+    padding: 0;
+}
+
+.lista li {
+    padding: 12px 0;
+}
+
+/* Separador */
+.divider {
+    margin: 16px 0 0;
+    border: 0;
+    border-top: 2px solid var(--gray-border);
+}
+
+/* Recomendaciones */
+.recomendaciones {
+    max-width: none;
+    margin: 0;
+    padding: 24px 0 48px;
+}
+
+.recomendaciones h2 {
+    margin: 0 0 24px;
+    font-family: var(--font-heading);
+    font-weight: 400;
+    font-size: 2.4rem;
+}
+
+.tarjeta img {
+    border: 2px solid var(--gray-border);
+}
+
+.tarjeta-info h4,
+.tarjeta-info p {
+    margin: 0;
+}
+
+.tarjeta-info p {
+    color: #6b665c;
+    font-weight: 700;
+}
+
+/* ===== ESCRITORIO ===== */
+@media (min-width: 768px) {
+
+:root {
+        --lado: max(6.25%, calc((100% - 1120px) / 2));
+}
+
+.producto-contenedor {
+    grid-template-columns: var(--lado) minmax(0, 1fr) 60px minmax(0, 1fr) var(--lado);
+    row-gap: 0;
+    padding-top: 4.5rem;
+}
+
+
+.producto-contenedor > .disco {
+    grid-column: 2;
+    grid-row: 1;
+    align-self: start;
+}
+
+.producto-contenedor > section:first-of-type {
+    grid-column: 4;
+    grid-row: 1;
+}
+
+
+.producto-contenedor > .divider {
+    grid-row: 2;
+    margin-top: 4.5rem;
+    
+}
+
+.producto-contenedor > .recomendaciones {
+        grid-column: 2 / 5;
+        grid-row: 3;
+        padding: 4.5rem 0 5rem;
+    }
+
+.titulo-album {
+    font-size: clamp(3rem, 6vw, 4.6rem);
+}
+
+.nombre-artista {
+        font-size: 1.3rem;
+}
+
+.precio {
+        font-size: 2.8rem;
+}
+
+.descripcion {
+        font-size: 1rem;
+}
+
+.recomendaciones h2 {
+        font-size: 3.5rem;
+        margin-bottom: 2rem;
+}
+
+
+.tarjeta-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+}
+
+.tarjeta-info {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 0.5rem;
+}
+
+.tarjeta-precio {
+        margin-top: 0;
+        white-space: nowrap;
+}
+}
