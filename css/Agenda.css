@@ -121,3 +121,16 @@
 .resto h2 {
     margin-bottom: 40px;
 }
+
+.eventos {
+    border-top: 2px solid var(--tinta);
+}
+
+.evento {
+    display: grid;
+    grid-template-columns: 90px 1fr auto;
+    gap: 30px;
+    align-items: center;
+    padding: 25px 0;
+    border-bottom: 1px solid var(--papel-oscuro);
+}
