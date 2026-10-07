@@ -1,73 +1,132 @@
+
+
+/*==ESTILOS DE CONTACTO*/
 * {
     box-sizing: border-box;
 }
 
-body{
+body {
     margin: 0;
-    color:#25231f;
-    background-color:#f1e8d8 ;
+    background: #f1e8d8;
+    color: #25231f;
     font-family: Arial, sans-serif;
 }
 
-.encabezado{
+.encabezado {
     padding: 1rem;
     text-align: center;
 }
 
-.logo{
+.logo {
     display: inline-block;
     color: #1c1b19;
-    text-decoration: none;
     font-size: 1.8rem;
     font-weight: 900;
+    text-decoration: none;
 }
 
-.logo span{
-    color:#d74332;
+.logo span {
+    color: #d74332;
 }
 
-nav{
+nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 0.7rem;
+    gap: 0.75rem;
     margin-top: 0.8rem;
 }
 
-nav a{
+nav a {
+    color: #1c1b19;
+    font-size: 0.75rem;
+    font-weight: bold;
     text-decoration: none;
-    color:#1c1b19;
-    font-size: 0.7rem;
-    font-weight: bold;
-}
-
-.franja{
-    padding: 0.7rem 1rem;
-    font-size: 0.7rem;
-    text-align: center;
-    font-weight: bold;
     text-transform: uppercase;
-    background-color:#1c1b19 ;
-    color:#f1e8d8;
 }
 
-.contenedor{
+
+.franja {
+    padding: 0.7rem 1rem;
+    background: #1c1b19;
+    color: #f1e8d8;
+    font-size: 0.7rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.contacto {
     max-width: 1100px;
-    margin: 0 auto;
     padding: 2rem 1rem;
-    border-bottom: 1px solid #1c1b19;
 }
 
+.introduccion {
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid #1c1b19;
+    width: 100%;
+}
 
 h1,
 h2 {
     margin: 0 0 0.35rem;
     color: #1c1b19;
     font-family: Impact, "Arial Narrow", sans-serif;
+    text-transform: uppercase;
 }
 
 h1 {
     font-size: clamp(2.5rem, 10vw, 4rem);
     line-height: 0.95;
+}
+
+.introduccion p {
+    max-width: 32rem;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.formulario {
+    display: grid;
+    gap: 1rem;
+    padding: 1.5rem 0 2rem;
+}
+
+.campo {
+    display: grid;
+    gap: 0.4rem;
+}
+
+.campo label {
+    font-size: 0.7rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    border: 1px solid #1c1b19;
+    border-radius: 0;
+    padding: 0.65rem;
+    background: transparent;
+    color: #25231f;
+    font: inherit;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    width: fit-content;
+    border: 0;
+    padding: 0.75rem 1.5rem;
+    background: #1c1b19;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
 }
 
