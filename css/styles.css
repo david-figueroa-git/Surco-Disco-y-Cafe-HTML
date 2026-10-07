@@ -1,0 +1,374 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f2ebdd;
+  color: #1c1a17;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+h1, h2, h3 {
+  font-family: 'Anton', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1.05;
+}
+
+.contenedor {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.rojo {
+  color: #d6402b;
+}
+
+.antetitulo {
+  color: #d6402b;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.boton {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 14px 26px;
+  border: 2px solid #1c1a17;
+}
+
+.boton-oscuro {
+  background-color: #1c1a17;
+  color: #f2ebdd;
+}
+
+.boton-oscuro:hover {
+  background-color: #d6402b;
+  border-color: #d6402b;
+}
+
+.boton-borde:hover {
+  color: #d6402b;
+  border-color: #d6402b;
+}
+
+.boton-claro {
+  color: #f2ebdd;
+  border-color: #f2ebdd;
+}
+
+.boton-claro:hover {
+  color: #d6402b;
+  border-color: #d6402b;
+}
+
+.enlace {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.enlace:hover {
+  color: #d6402b;
+}
+
+.encabezado {
+  padding: 16px 0;
+}
+
+.encabezado-contenido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  font-family: 'Anton', sans-serif;
+  font-size: 34px;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.logo span {
+  color: #d6402b;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 18px;
+}
+
+.menu a {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+}
+
+.menu a:hover {
+  color: #d6402b;
+}
+
+.menu a.activo {
+  border-bottom-color: #d6402b;
+}
+
+.cinta {
+  background-color: #1c1a17;
+  color: #f2ebdd;
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.cinta p {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.hero {
+  padding: 40px 0;
+  border-bottom: 2px solid #1c1a17;
+}
+
+.hero-contenido {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.titulo-inicio {
+  font-size: 54px;
+  margin-bottom: 20px;
+}
+
+.hero-descripcion {
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.botones {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.seccion {
+  padding: 48px 0;
+}
+
+.seccion-linea {
+  border-bottom: 2px solid #1c1a17;
+}
+
+.seccion-titulo {
+  margin-bottom: 24px;
+}
+
+.seccion-titulo h2 {
+  font-size: 38px;
+  margin-bottom: 8px;
+}
+
+.discos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px 16px;
+}
+
+.disco img {
+  border: 2px solid #1c1a17;
+}
+
+.disco-info {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.disco-nombre {
+  font-family: 'Work Sans', sans-serif;
+  text-transform: none;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.disco-artista {
+  color: #6b645a;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.disco-precio {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.cafe {
+  border: 2px solid #1c1a17;
+}
+
+.cafe-texto {
+  background-color: #1c1a17;
+  color: #f2ebdd;
+  padding: 40px 24px;
+}
+
+.cafe-texto h2 {
+  font-size: 38px;
+  margin-bottom: 16px;
+}
+
+.cafe-descripcion {
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.carta {
+  padding: 32px 24px;
+}
+
+.carta h3 {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+.carta li {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 0;
+  border-bottom: 1px dashed #1c1a17;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.evento {
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  gap: 16px;
+  padding: 24px 0;
+  border-top: 2px solid #1c1a17;
+}
+
+.evento:last-child {
+  border-bottom: 2px solid #1c1a17;
+}
+
+.evento-fecha {
+  font-family: 'Anton', sans-serif;
+  font-size: 44px;
+  line-height: 1;
+}
+
+.evento-fecha span {
+  display: block;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.evento-info h3 {
+  font-size: 28px;
+  margin-bottom: 6px;
+}
+
+.evento-info p {
+  color: #6b645a;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.evento .boton {
+  grid-column: 2;
+  justify-self: start;
+}
+
+.pie {
+  background-color: #1c1a17;
+  color: #f2ebdd;
+  padding: 48px 0 24px;
+}
+
+.pie-contenido {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.pie-logo {
+  font-family: 'Anton', sans-serif;
+  font-size: 56px;
+  line-height: 1;
+  margin-bottom: 16px;
+}
+
+.pie-logo span {
+  color: #d6402b;
+}
+
+.pie-marca p {
+  font-weight: 600;
+}
+
+.pie-titulo {
+  color: #e0a526;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.pie-columna li {
+  margin-bottom: 8px;
+}
+
+.pie-columna a {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.pie-columna a:hover {
+  color: #d6402b;
+}
+
+.pie-final {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #6b645a;
+  font-size: 12px;
+  font-weight: 700;
+}
