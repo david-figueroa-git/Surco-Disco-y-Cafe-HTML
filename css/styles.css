@@ -373,7 +373,7 @@ h1, h2, h3 {
   font-weight: 700;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 900px) and (max-width: 1199px){
 
   .contenedor {
     padding: 0 40px;
