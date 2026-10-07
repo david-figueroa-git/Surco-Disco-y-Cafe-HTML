@@ -1,0 +1,158 @@
+.cabecera-pagina {
+  padding: 40px 0;
+  border-bottom: 2px solid #1c1a17;
+}
+
+.titulo-pagina {
+  font-size: 60px;
+}
+
+.subtitulo-pagina {
+  color: #6b645a;
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+.historia {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 48px;
+}
+
+.historia-intro {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.historia-texto p {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.cifras {
+  border-top: 2px solid #1c1a17;
+  border-bottom: 2px solid #1c1a17;
+}
+
+.cifra {
+  padding: 24px 20px;
+  border-bottom: 2px solid #1c1a17;
+}
+
+.cifra:last-child {
+  border-bottom: none;
+}
+
+.cifra-numero {
+  font-family: 'Anton', sans-serif;
+  font-size: 56px;
+  line-height: 1;
+  color: #d6402b;
+  margin-bottom: 12px;
+}
+
+.cifra-texto {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.equipo {
+  display: grid;
+  gap: 24px;
+}
+
+.persona {
+  border: 2px solid #1c1a17;
+  padding: 28px;
+}
+
+.persona img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 2px solid #1c1a17;
+  object-fit: cover;
+  margin-bottom: 24px;
+}
+
+.persona h3 {
+  font-size: 30px;
+}
+
+.persona-cargo {
+  color: #6b645a;
+  font-weight: 600;
+  padding-bottom: 20px;
+  border-bottom: 1px dashed #1c1a17;
+  margin-bottom: 16px;
+}
+
+.persona-recomienda {
+  color: #d6402b;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.persona-disco {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+@media (min-width: 900px) and (max-width: 1199px) {
+
+  .cabecera-pagina {
+    padding: 60px 0;
+  }
+
+  .titulo-pagina {
+    font-size: 90px;
+  }
+
+  .subtitulo-pagina {
+    max-width: 460px;
+    font-size: 17px;
+  }
+
+  .historia {
+    flex-direction: row;
+    gap: 80px;
+    margin-bottom: 70px;
+  }
+
+  .historia-intro,
+  .historia-texto {
+    flex: 1;
+  }
+
+  .historia-intro {
+    font-size: 28px;
+  }
+
+  .cifras {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .cifra {
+    border-bottom: none;
+    border-right: 2px solid #1c1a17;
+    padding: 40px 20px;
+  }
+
+  .cifra:last-child {
+    border-right: none;
+  }
+
+  .cifra-numero {
+    font-size: 64px;
+  }
+
+  .equipo {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+}
