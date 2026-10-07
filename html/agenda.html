@@ -3,25 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Agenda - Surco Discos y Café</title>
+    <link rel="stylesheet" href="../css/baseStyle.css">
+    <link rel="stylesheet" href="../css/Agenda.css">
 </head>
 <body>
-    <div class="cinta">
-    Discos nuevos y usados · Café de origen · Música en vivo cada viernes
+
+<header class="site-header">
+
+    <div class="container header-inner">
+
+        <a href="index.html" class="logo">
+            Surco<span>.</span>
+        </a>
+
+        <nav class="main-nav">
+
+            <a href="index.html">Inicio</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="disco.html">Disco del mes</a>
+            <a href="agenda.html" class="active" aria-current="page">Agenda</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="contacto.html">Contacto</a>
+
+        </nav>
+
     </div>
-    <main>
-        <section class="page-header">
+
+</header>
+
+<div class="cinta">
+    Discos nuevos y usados · Café de origen · Música en vivo cada viernes
+</div>
+
+<main>
+
+    <section class="page-header">
 
         <div class="container">
+
             <h1>Agenda</h1>
+
             <p>
                 Conciertos pequeños, ferias de discos y talleres.
                 Cupo limitado: la tienda es chiquita.
             </p>
+
         </div>
 
-
     </section>
+
+
     <section class="proximo">
 
         <div class="container">
@@ -30,7 +62,7 @@
 
                 <div class="proximo-fecha">
 
-                    <img src="imagenes/afiche-marimba.jpg" alt="Foto de Marimba Norte, con los cuatro integrantes tocando marimba y cununos" class="proximo-imagen">
+                    <img src="../images/afiche-marimba.jpg" alt="Foto de Marimba Norte, con los cuatro integrantes tocando marimba y cununos" class="proximo-imagen">
 
                     <p class="fecha-nombre">
                         Marimba Norte · en vivo
@@ -80,13 +112,20 @@
 
                     </div>
 
+
                     <button type="button" class="btn">
                         Reservar mesa
                     </button>
+
                 </div>
+
             </div>
+
         </div>
+
     </section>
+
+
     <section class="resto">
 
         <div class="container">
@@ -172,6 +211,7 @@
 
 
                 <article class="evento">
+
                     <div class="evento-fecha">
                         <span>31</span>
                         <small>Oct</small>
@@ -183,14 +223,84 @@
                             Viernes · 9:00 p.m. · Ven disfrazado
                         </p>
                     </div>
+
                     <span class="evento-precio">Gratis</span>
+
                 </article>
+
             </div>
+
         </div>
+
     </section>
 
+</main>
 
-    </main>
+
+<footer class="site-footer">
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div class="footer-brand">
+
+                <a href="index.html" class="logo">
+                    Surco<span>.</span>
+                </a>
+
+                <p>
+                    Discos y café desde 2014.<br>
+                    Carrera 14 #18-32, Armenia, Quindío.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Tienda</h3>
+
+                <a href="catalogo.html">Catálogo</a>
+                <a href="disco.html">Disco del mes</a>
+                <a href="agenda.html">Agenda</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Surco</h3>
+
+                <a href="nosotros.html">Nosotros</a>
+                <a href="contacto.html">Contacto</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Redes</h3>
+
+                <a href="#">Instagram</a>
+                <a href="#">Spotify</a>
+                <a href="#">WhatsApp</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>© 2026 Surco Discos & Café</p>
+            <p>Proyecto de práctica · ADSO SENA</p>
+
+        </div>
+
+    </div>
+
+</footer>
 
 </body>
 </html>
