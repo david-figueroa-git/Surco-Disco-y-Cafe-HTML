@@ -54,3 +54,20 @@
     letter-spacing: 1px;
     text-transform: uppercase;
 }
+
+.proximo-info {
+    padding: 40px;
+}
+
+.proximo-info h2 {
+    margin-bottom: 16px;
+    font-size: 52px;
+    line-height: 1.1;
+}
+
+.proximo-texto {
+    margin-bottom: 30px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.7;
+}
