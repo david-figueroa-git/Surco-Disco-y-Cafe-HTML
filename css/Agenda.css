@@ -1,0 +1,17 @@
+
+.page-header {
+    padding: 60px 0 40px;
+    border-bottom: 2px solid var(--tinta);
+}
+
+.page-header h1 {
+    line-height: 1.1;
+}
+
+.page-header p {
+    max-width: 510px;
+    color: var(--gris);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.6;
+}
