@@ -71,3 +71,43 @@
     font-weight: 600;
     line-height: 1.7;
 }
+
+
+.datos-evento {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 30px;
+    border: 2px solid var(--tinta);
+}
+
+.datos-evento .dato {
+    padding: 15px;
+}
+
+.datos-evento .dato:nth-child(odd) {
+    border-right: 2px solid var(--tinta);
+}
+
+.datos-evento .dato:nth-child(-n+2) {
+    border-bottom: 2px solid var(--tinta);
+}
+
+.datos-evento .dato span {
+    display: block;
+    margin-bottom: 4px;
+    color: var(--gris);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.datos-evento .dato strong {
+    display: block;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.proximo-info .btn {
+    line-height: 1.5;
+}
