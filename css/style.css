@@ -212,3 +212,57 @@ button {
 }
 
 
+@media (min-width: 760px) {
+    .encabezado {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+    nav {
+        margin-top: 0;
+    }
+
+    .contacto {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        grid-template-areas:
+        "intro intro"
+        "form info";
+        column-gap: 3rem;
+        padding: 3rem 2rem;
+    }
+
+    .introduccion {
+        grid-area: intro;
+        margin-bottom: 1rem;
+    }
+
+    .formulario {
+        grid-area: form;
+        grid-template-columns: 1fr 1fr;
+    align-content: start;
+        column-gap: 1rem;
+    }
+
+    .campo-mensaje {
+    grid-column: 1 / -1;
+    }
+
+    .formulario button {
+    grid-column: 1 / -1;
+    }
+
+    .informacion {
+    grid-area: info;
+    }
+
+    .enlaces-pie {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: var(--ancho-maximo);
+    }
+}
+
+
