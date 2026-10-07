@@ -372,3 +372,120 @@ h1, h2, h3 {
   font-size: 12px;
   font-weight: 700;
 }
+
+@media (min-width: 900px) {
+
+  .contenedor {
+    padding: 0 40px;
+  }
+
+  .encabezado {
+    padding: 24px 0;
+  }
+
+  .encabezado-contenido {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .menu {
+    gap: 26px;
+  }
+
+  .hero {
+    padding: 60px 0;
+  }
+
+  .hero-contenido {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .hero-texto,
+  .hero-imagen {
+    flex: 1;
+  }
+
+  .titulo-inicio {
+    font-size: 100px;
+  }
+
+  .botones {
+    flex-direction: row;
+  }
+
+  .seccion {
+    padding: 70px 0;
+  }
+
+  .seccion-titulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 32px;
+  }
+
+  .seccion-titulo h2 {
+    font-size: 48px;
+    margin-bottom: 0;
+  }
+
+  .discos {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 28px;
+  }
+
+  .disco-info {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .cafe {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .cafe-texto,
+  .carta {
+    padding: 56px 50px;
+  }
+
+  .cafe-texto h2 {
+    font-size: 48px;
+  }
+
+  .evento {
+    grid-template-columns: 130px 1fr auto;
+    align-items: center;
+  }
+
+  .evento .boton {
+    grid-column: 3;
+  }
+
+  .evento-fecha {
+    font-size: 52px;
+  }
+
+  .evento-info h3 {
+    font-size: 30px;
+  }
+
+  .pie-contenido {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .pie-marca {
+    flex: 2;
+  }
+
+  .pie-columna {
+    flex: 1;
+  }
+
+  .pie-final {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
